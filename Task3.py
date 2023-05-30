@@ -25,3 +25,18 @@
 # ноутбук
 #     12
 
+list_letter_values = {1:'AEIOULNSTRАВЕИНОРСТ',
+                      2:'DGДКЛМПУ',
+                      3:'BCMPБГЁЬЯ',
+                      4:'FHVWYЙЫ',
+                      5:'KЖЗХЦЧ',
+                      8:'JXШЭЮ',
+                      10:'QZФЩЪ'}
+
+word = input('Enter Word: ').upper()
+sum_Word = 0
+for i in word:
+    for j, u in list_letter_values.items():
+        if i in u:
+            sum_Word += j
+print(sum_Word)
